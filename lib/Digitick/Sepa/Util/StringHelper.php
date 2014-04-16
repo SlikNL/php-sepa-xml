@@ -25,6 +25,19 @@ namespace Digitick\Sepa\Util;
 class StringHelper
 {
     /**
+     * @param  string $inputString
+     * @param  int $length
+     * @param  string $dots
+     * @return string
+     */
+    public static function limitLength($inputString, $length, $dots = '..')
+    {
+        return strlen($string) > $length ?
+            substr($string, 0, $length - strlen($dots)) . $dots :
+            $string;
+    }
+
+    /**
      * @param string $inputString
      * @return string
      */
