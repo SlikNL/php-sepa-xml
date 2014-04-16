@@ -133,7 +133,8 @@ class BaseTransferInformation implements TransferInformationInterface
      */
     public function setEndToEndIdentification($EndToEndIdentification)
     {
-        $this->EndToEndIdentification = StringHelper::sanitizeString($EndToEndIdentification);
+        $EndToEndIdentification = StringHelper::sanitizeString($EndToEndIdentification);
+        $this->EndToEndIdentification = StringHelper::limitLength($EndToEndIdentification, 35);
     }
 
     /**
