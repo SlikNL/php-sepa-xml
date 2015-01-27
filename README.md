@@ -30,12 +30,7 @@ In the "require" section of your composer.json file:
 
 Always up to date (bleeding edge, API *not* guaranteed stable)
 ```javascript
-"digitick/sepa-xml" : "dev-master"
-```
-
-No namespaces, only bugfixes
-```javascript
-"digitick/sepa-xml" : "dev-no_namespace"
+"slik/sepa-xml" : "dev-master"
 ```
 
 Specific minor version, API stability
